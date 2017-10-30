@@ -1,0 +1,15 @@
+--- origsrc/gv-3.7.3.90/src/Makefile.am	2012-01-21 07:47:27.000000000 +0100
++++ src/gv-3.7.3.90/src/Makefile.am	2012-09-16 16:56:10.238429500 +0200
+@@ -252,9 +252,11 @@ gv_make_res.dat :
+ 	@echo "GV.useBackingPixmap:	$(USE_BACKING_PIXMAP)"		>> gv_make_res.dat
+ 	@echo "GV*dirs:		Home\n\\"				>> gv_make_res.dat
+ 	@echo "			Tmp\n\\"				>> gv_make_res.dat
++	@echo "			/usr/share/doc\n\\"			>> gv_make_res.dat
++	@echo "			/usr/local/share/doc\n\\"		>> gv_make_res.dat
+ 	@echo "			$(sysdocdir)\n\\"			>> gv_make_res.dat
+ 	@echo "			/usr/local/doc"				>> gv_make_res.dat
+-	@echo "GV*filter:		no .*"				>> gv_make_res.dat
++	@echo "GV*filter:		*.*ps* *.pdf*  no  .*"		>> gv_make_res.dat
+ 	@echo "GV*filters:		None\n\\"			>> gv_make_res.dat
+ 	@echo "			*.*ps* *.pdf*  no  .*\n\\"		>> gv_make_res.dat
+ 	@echo "			*.*ps*   no  .*\n\\"			>> gv_make_res.dat

@@ -1,0 +1,11 @@
+--- origsrc/gv-3.7.3.90/src/Makefile.am	2012-01-21 07:47:27.000000000 +0100
++++ src/gv-3.7.3.90/src/Makefile.am	2012-09-16 16:56:10.238429500 +0200
+@@ -42,7 +42,7 @@ AM_CPPFLAGS = -DNON_BLOCKING_IO -DGV_COD
+ 
+ AM_CFLAGS = 
+ 
+-LDADD = ../lib/libgnu.a
++LDADD = ../lib/libgnu.a -liconv
+ 
+ gv_LDFLAGS = @X_LIBS@
+ 
