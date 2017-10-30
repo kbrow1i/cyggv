@@ -2,19 +2,14 @@ NAME="gv"
 VERSION="3.7.4"
 RELEASE="1"
 CATEGORY="X11 Text Graphics"
-SUMMARY="A PostScript and PDF viewer for X using 3d Athena Widgets"
-DESCRIPTION="gv is a comfortable viewer of PostScript and PDF files for the X
-Window System.  It uses the ghostscript PostScript(tm) interpreter and
-is based on the classic X front-end for gs, ghostview.  It is more
-comfortable and more powerful than ghostview."
+SUMMARY="View PostScript and PDF documents using ghostscript"
+DESCRIPTION="GNU gv allows one to view and navigate through PostScript and PDF
+documents on an X display by providing a user interface for the
+ghostscript interpreter."
 
 HOMEPAGE="http://www.gnu.org/software/gv/"
 SRC_URI="mirror://gnu/${PN}/${P}.tar.gz"
 PATCH_URI="gv-resources.patch gv-iconv.patch"
-
-GNU gv allows to view and navigate through PostScript and PDF documents on an X display by providing a user interface for the ghostscript interpreter.
-
-View PostScript and PDF documents using ghostscript
 
 REQUIRES="ghostscript"
 
