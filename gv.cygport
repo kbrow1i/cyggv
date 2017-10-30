@@ -1,6 +1,6 @@
 NAME="gv"
-VERSION="3.7.4"
-RELEASE="1"
+VERSION=3.7.4
+RELEASE=2
 CATEGORY="X11 Text Graphics"
 SUMMARY="View PostScript and PDF documents using ghostscript"
 DESCRIPTION="GNU gv allows one to view and navigate through PostScript and PDF
