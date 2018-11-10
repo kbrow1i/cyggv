@@ -10,10 +10,13 @@ ghostscript interpreter."
 HOMEPAGE="http://www.gnu.org/software/gv/"
 SRC_URI="mirror://gnu/${PN}/${P}.tar.gz"
 PATCH_URI="gv-resources.patch gv-iconv.patch"
+PATCH_URI+=" https://src.fedoraproject.org/cgit/rpms/gv.git/plain/gv-resource.patch"
+PATCH_URI+=" https://src.fedoraproject.org/cgit/rpms/gv.git/plain/gv-bounding-box.patch"
+PATCH_URI+=" https://src.fedoraproject.org/cgit/rpms/gv.git/plain/gv-bug1071238.patch"
 
 REQUIRES="ghostscript"
 
-DEPEND="libXaw3d-devel"
+DEPEND="libXaw3d-devel libXinerama-devel"
 
 src_compile() {
 	cd ${S}
